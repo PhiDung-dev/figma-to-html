@@ -6,4 +6,78 @@ html{
 }
 body{
     font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    height: 10000px;
+}
+/* ================ common ================= */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+
+}
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    font-size: 1.6rem;
+    /* line-height: 50px; */
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 24.5px;
+    color: white;
+    background-color: black;
+    padding: 0px 16px;
+    text-align: center;
+}
+/* ================ header ================= */
+
+.head .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0px 8px
+}
+.nav ul{
+    display: flex;
+}
+.nav{
+    margin-left: auto;
+}
+.nav a{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5F5B53;
+    padding: 8px 21px;
+    position: relative;
+}
+.nav a:hover, 
+.nav li.active a
+{
+    color: black;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    border-radius: 1px;
+    left: 21px;
+}
+.head .btn-sign-up{
+    min-width: 144px;
+    margin-left: 49px;
+}
+.head.fixed{
+    position: sticky;
+    top:-28px;
+}
+.head{
+    background-color: wheat;
 }
