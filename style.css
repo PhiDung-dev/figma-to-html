@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --font-heading: "Sen", sans-serif;
+    --color-btn:  #FFB900;
+}
 html{
     font-size: 62.5%
 }
@@ -80,4 +84,144 @@ a{
 }
 .head{
     background-color: wheat;
+    z-index: 1;
+}
+
+/* ================ body ================= */
+
+.hero .body{
+    display: flex;
+}
+.hero .hero-summary{
+    position: absolute;
+    bottom: 48px;
+    right: 0px;
+    background-color: white;
+    width: 270px;
+    height: 244px;
+    border-radius: 10px;
+    /* padding: 10px 63px 10px 24px; */
+    padding: 24px;
+}
+.hero {
+    padding-top: calc(64px - 8px);
+    background-color: wheat;
+    padding-bottom: 65px;
+}
+.hero .media-block{
+    width: 49%;
+    position: relative;
+}
+.hero .content-block{
+    width: 51%;
+}
+.hero .body .media-block .img{
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.hero .hero-summary .item{
+    display: flex;
+    height: 56px;
+    align-items: center;  
+}
+.hero .hero-summary .item + .item{
+    margin-top: 14px;
+}
+.hero .hero-summary .icon{
+    width: 48px;
+    height: 48px;
+    margin: 4px 26px 4px 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .content-block{
+    width: 51%;
+    padding-left: 130px;
+    padding-top: 64px;
+}
+.infor .label{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #5F5B53;
+}
+.infor .title{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.hero .content-block h1{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 68px;
+    letter-spacing: -1.16px;
+    color: black;
+}
+.hero .desc{
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color   : #5F5B53;
+
+}
+.hero .content-block .see-watch{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+.see-watch .see-course a{
+    width: 180px;
+    height: 64px;
+    background-color: var(--color-btn);
+    font-size: 1.8rem;
+    line-height: 64px;
+    border-radius: 32px;
+}
+.see-watch .see-course:hover{
+    opacity: 0.5;
+}
+.see-watch .watch-video{
+    border:none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.watch-video .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+.hero .recent{
+    margin-top: 48px;
+    
+}
+.infor{
+    display: flex;
+    margin-top: 8px;
+}
+.infor .student span, .infor .courses span{
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 54px;
+}
+.infor span:nth-of-type(2){
+    margin-left: 15px;
+}
+.infor .courses{
+    margin-left: 28px;
 }
