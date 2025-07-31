@@ -80,9 +80,7 @@ a{
 }
 .head.fixed{
     position: sticky;
-    top:-28px;
-}
-.head{
+    top:-28px;    
     background-color: wheat;
     z-index: 1;
 }
@@ -161,7 +159,7 @@ a{
     letter-spacing: -1.16px;
     color: black;
 }
-.hero .desc{
+.hero .desc, .popular .desc{
     margin-top: 22px;
     font-size: 1.8rem;
     line-height: 3rem;
@@ -210,7 +208,7 @@ a{
     margin-top: 48px;
     
 }
-.infor{
+.content-block .infor{
     display: flex;
     margin-top: 8px;
 }
@@ -218,10 +216,124 @@ a{
     font-weight: 700;
     font-size: 4.4rem;
     line-height: 54px;
+    color: black;
 }
 .infor span:nth-of-type(2){
     margin-left: 15px;
 }
 .infor .courses{
     margin-left: 28px;
+}
+/* ================ popular ================= */
+/* .popular{
+    padding: 65px 0px;
+    background-color: whitesmoke;
+} */
+.popular .main-content{
+    margin-top: 200px;
+}
+.popular .popular-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular .top-left{
+    width:458px;
+}
+.popular .top-left h2{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 48px;
+    letter-spacing: -2%;
+}
+.popular .top-right{
+    width: 98px;
+    height: 40px;
+    display: flex;
+    gap: 18px;
+}
+.popular .control-btn{
+    border: 1px solid var(--color-btn);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.popular .control-btn + .control-btn{
+    background-color: var(--color-btn);
+}
+.popular .booking{
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+.popular .booking .product{
+    width: 370px;
+    height: 446px;
+    border: 1px solid #E2DFDA;
+    border-radius: 12px;
+}
+
+.popular .booking .product:hover{
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 36px 0px #0000000D;
+
+}
+.booking .name{
+    margin: 16px 22px 22px;
+    position: relative;
+}
+.booking h4{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+.booking .desc{
+    font-size: 1.4rem;
+    line-height: 26px;
+    margin-top: 6px;
+}
+.booking .end-booking{
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.booking .price{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+.booking .book-now{
+    width: 118px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.booking .book-now:hover{
+    background-color: var(--color-btn);
+}
+.booking .star{
+    color: var(--color-btn);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 48;
+    height: 28px;
+    gap: 6px;
+}
+.star .spst{
+    font-size: 1.6rem;
+    line-height: 28px
 }
